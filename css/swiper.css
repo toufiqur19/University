@@ -1,0 +1,98 @@
+
+#swiperSlider{
+  position: relative;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.blog-title{
+  width: 300px;
+}
+.bolg-section{
+  width: 950px;
+}
+.container .content {
+  display: flex;
+}
+
+.card {
+  background: #fff;
+  position: relative;
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.bolg-datels{
+  padding: 15px;
+}
+.bolg-datels .dateName{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bolg-datels .dateName .date{
+  display: flex;
+  text-align: center;
+}
+.bolg-datels .dateName .date i{
+  font-size: 10px;
+  color: gray;
+  margin: 0 5px 0 0;
+}
+.bolg-datels .dateName .date h6{
+  font-size: 9px;
+  color: gray;
+  margin: 0 .5px;
+}
+.bolg-datels .dateName .name{
+  display: flex;
+}
+.bolg-datels .dateName .name i{
+  font-size: 10px;
+  color: gray;
+  margin: 0 5px;
+}
+.bolg-datels .dateName .name h6{
+  font-size: 9px;
+  color: gray;
+  margin: 0 .5px;
+}
+.bolg-datels .inner-datels h5{
+  font-size: 10.8px;
+  padding-top: 10px;
+}
+.bolg-datels .inner-datels p{
+  font-size: 8px;
+  text-align: justify;
+}
+.blog-img img{
+  width: 215px;
+  height: 115px;
+}
+.btn-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.btn-icon .btn1 a{
+  font-size: 12px;
+  color: #ab0534;
+  text-decoration: none;
+}
+.btn-icon .icon{
+  font-size: 10px;
+  color: gray;
+  display: flex;
+  gap: 10px;
+}
+
+.swiper-pagination-bullet{
+  background: gray;
+}

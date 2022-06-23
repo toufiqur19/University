@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*================================= 
+        common css 
+ ===================================*/
+ .container{
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 70%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*================================= 
+        navbar css 
+ ===================================*/
+#navbar{
+    width: 100%;
+    height: 93vh;
+    background: #ab0534;
+    background-position: center;
+    background-size: cover;
+}
+.nav_shadow{
+    text-align: center;
+    padding-bottom: 6px;
+    box-shadow: 0px 0 5px #63031e;
+   
+}
+ .navbar{
+     display: flex;
+     justify-content: space-around;
+     padding-top: 5px;
+ }
+ a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+ }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* LOGO */
+ .logo {
+  font-size: 25px;
+  font-weight: 600;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  font-size: 14px;
+  padding-left: 35px;
+ }
+ 
+ .menu li {
+  padding: 0px 8px;
+ }
+ nav ul .menu li::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 40px;
+  margin-left: 20px;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  opacity: 0;
+  }
+  nav ul .menu li:last-child::before{
+      margin-left: 25px; 
+  }
+  nav ul .menu li:hover::before{
+    transform: translateY(0px);
+    opacity: 1;
+ }
+
+
+ .searchToggle{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchToggle i{
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+  top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.searchToggle i.cancel{
+  opacity: 0;
+  pointer-events: none;
+}
+.searchToggle.active i.cancel{
+  opacity: 1;
+  pointer-events: auto;
+}
+.searchToggle.active i.search{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchBox{
+  position: relative;
+}
+.searchBox .search-field{
+  position: absolute;
+  left: 8px;
+  top: 60px;
+  margin-bottom: 70px;
+  width: 220px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.searchToggle.active ~ .search-field{
+  margin-bottom: 0px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.search-field input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 45px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.search-field i{
+  position: absolute;
+  color: #ab0534;
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+  /* signup_login */
+  .sign_up_login{
+      display: flex;
+  }
+  .sign_up_login .sign_up{
+    padding: 0 15px;
+    font-size: 14px;
+    color: #f4f8ff;
+    cursor: pointer;
+  }
+  .sign_up_login .login{
+    font-size: 14px;
+    color: #f4f8ff;
+    cursor: pointer;
+  }
+  .sign_up_login .sign_up i{
+    font-size: 13px;
+  }
+  .sign_up_login .login i{
+    font-size: 13px;
+  }
+
+.home_datels {
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+    color: #f4f8ff;
+}
+.home_datels h2{
+    font-size: 1.8rem;
+}
+.home_datels p{
+    padding: 0 0 14px 0;
+    font-size: 12px;
+}
+.home_datels .btn1 a{
+    text-decoration: none;
+    color: #f4f8ff;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 5px 14px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 7px #92022b;
+}
+.home_datels .top_img{
+  position: absolute;
+  top: -5px;
+  left: 235px;
+}
+.home_datels .top_img img{
+  width: 530px;
+  height: 765px;
+}
+  /*================================= 
+     course_categories section css 
+ ===================================*/
+#catagoris{
+  width: 100%;
+  height: 70vh;
+  background: #f4f8ff;
+}
+.inner-catagori{
+  position: relative;
+}
+.inner-catagori .title{
+  padding: 50px 0;
+}
+.inner-catagori .title h4{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.inner-catagori .title .line{
+  width: 110px;
+  height: 2px;
+  margin-top: 10px;
+  background: black;
+  position: absolute;
+  margin-left: 300px;
+}
+.catagoris-item{
+  display: flex;
+  margin-top: 25px;
+}
+.catagoris-item .item-box {
+  width: 190px;
+  height: 100px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 10px;
+  color: #ab0534;
+}
+
+.catagoris-item .item-box i{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.catagoris-item .item-box h5{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.catagoris-item .item-box:hover { 
+  background: #ab0534;
+  color: #f4f8ff;
+}
+.catagoris-item .item-box:hover .line{
+  display: none;
+}
+.catagoris-item .item-box:hover .line1{
+  display: none;
+}
+.catagoris-item .item-box:hover .line2{
+  display: none;
+}
+.catagoris-item .item-box:hover .line3{
+  display: none;
+}
+
+/*line box css start*/
+
+.catagoris-item .item-box .line{
+  width: 90px;
+  height: 1px;
+  margin-top: -100px;
+  background: gray;
+  position: absolute;
+  margin-left: 0;
+  display:block;
+  transition: all 0.3s ease;
+}
+.catagoris-item .item-box .line1{
+  width: 1px;
+  height:80px;
+  margin-top: 0px;
+  background: gray;
+  position: absolute;
+  margin-left: -110px;
+  display:block;
+  transition: all 0.3s ease;
+}
+.catagoris-item .item-box .line2{
+  width: 1px;
+  height:80px;
+  margin-top: 0px;
+  background: gray;
+  position: absolute;
+  margin-left: 110px;
+  display:block;
+  transition: all 0.3s ease;
+}
+.catagoris-item .item-box .line3{
+  width: 90px;
+  height: 1px;
+  margin-top: 100px;
+  background: gray;
+  position: absolute;
+  margin-left: 0;
+  display:block;
+  transition: all 0.3s ease;
+}
+
+/*line box css start*/
+
+
+ /*================================= 
+     top-courses section css 
+ ===================================*/
+.content{
+  position: relative;
+  display: flex;
+  padding: 40px 0;
+}
+.content .datels{
+  float: left;
+  width: 585px;
+}
+.content .btn{
+  float: right;
+  width: 585px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+.content .datels h4{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111111;
+}
+.content .datels p{
+  font-size: .7rem;
+  color: #111111;
+}
+.btn{
+  padding-right: 15px;
+}
+ .btn a{
+  text-decoration: none;
+  color: #111111;
+  font-size: .75rem;
+  border: 1px solid #111111;
+  padding: 6px 18px;
+  border-radius: 20px;
+  transition: .4s;
+}
+.btn a:hover{
+  border: 1px solid #ab0534;
+  background: #ab0534;
+  color: #f4f8ff;
+}
+.courses-box{
+  display: flex;
+  margin-top: 14px;
+}
+.box{
+ margin: 0 7px; 
+ box-shadow: 0px 1px 1px 2px #f4f8ff;
+ transition: all 0.4s ease;
+}
+.box:hover{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+ }
+.box-text{
+  padding: 0 15px 12px 15px ;
+}
+.box-text h4{
+  font-size: 12px;
+  font-weight: 600;
+  color: #111111;
+}
+.box-text p{
+  font-size: 9px;
+  text-align: justify;
+  margin-top: 14px;
+  font-weight: 500;
+  color: #111111;
+}
+.box-text h6{
+  font-size: 12px;
+  text-align: justify;
+  margin-top: 14px;
+  font-weight: 700;
+  color: #63031e;
+}
+.box-text .stat{
+  font-size: 10px;
+  text-align: justify;
+  margin-top: 4px;
+  font-weight: 500;
+  color: #ed8000;
+}
+
+ /*================================= 
+     popular-courses section css 
+ ===================================*/
+#popular-course{
+  width: 100%;
+  height: 45vh;
+  background: #f4f8ff;
+  margin-top: 60px;
+}
+.all-card{
+  display: flex;
+}
+.popular-inner{
+  padding-top: 50px;
+}
+.popular-inner .popular-text{
+  width: 300px;
+}
+.popular-inner .popular-text h4{
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+.popular-inner .popular-text p{
+  font-size: .6rem;
+  line-height: 18px;
+}
+.all-card .popular-card{
+  position: relative;
+  padding-top: 35px;
+  margin: 0 9px 0 0;
+}
+
+.all-card .popular-card h6{
+  position: absolute;
+  padding-top: 35px;
+  margin: 0 9px 0 0;
+  top: 1.6rem;
+  left: 5rem;
+  color: #f4f8ff;
+  font-weight: 400;
+}
+.all-card .popular-card:last-child h6{
+  left: 4rem;
+}
+.hr{
+  margin-top: 40px;
+  width: 100%;
+  height: 1px;
+  background: rgb(226, 223, 223);
+  
+}
+
+/*================================= 
+     clients section css 
+ ===================================*/
+
+ #achieve{
+  margin: 40px 0;
+}
+.achieve .achieve-title{
+  width: 300px;
+}
+ h5{
+  font-size: 18px;
+  font-weight: 600;
+}
+ p{
+  font-size: 10px;
+  margin-top: 10px;
+}
+.achieve .inner-achieve{
+  display: flex;
+  margin-top: 50px;
+}
+.inner-achieve .achieve-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-shadow: 0px 1px 1px 2px #f4f8ff;
+  margin: 0 10px -26px;
+  transition: all 0.4s ease;
+}
+.inner-achieve .achieve-card:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.inner-achieve .achieve-card img{
+  width: 50px;
+  height: 50px;
+}
+.inner-achieve .achieve-card .ac-4{
+  width: 42px;
+  height: 67px;
+}
+.inner-achieve .achieve-card .ac-6{
+  width: 120px;
+  height: 50px;
+}
+.inner-achieve .achieve-card h6{
+  font-weight: 600;
+  padding: 12px 0;
+}
+.inner-achieve .achieve-card p{
+  font-size: 10px;
+  text-align: center;
+}
+
+
+/*================================= 
+     clients section css 
+ ===================================*/
+
+ #clients{
+  margin: 70px 0;
+  width: 100%;
+  height: 90vh;
+  background: #f4f8ff;
+ }
+
+ .inner-client{
+  padding: 40px 0;
+ }
+ .client-title{
+  width: 300px;
+ }
+ .clients-box{
+  display: flex;
+  margin: 40px 0;
+ }
+ .client-card img{
+  width: 52px;
+  height: 62px;
+ }
+ .client-card {
+  width: 580px;
+  position: relative;
+  box-shadow: .5px .5px 0 .5px rgb(226, 225, 225);
+ }
+ 
+ .client-card:last-child{
+  box-shadow: none;
+  border-bottom: 1px solid rgb(226, 225, 225);
+ }
+ 
+ .client-card p{
+  position: absolute;
+  top: 22px;
+  padding: 0 35px 0 22px;
+  font-size: 8px;
+  width: 270px;
+ }
+ .client-card .profile{
+  display: flex;
+  padding: 2.5rem 0 2rem 0;
+}
+.client-card .profile .p-title{
+ margin: 15px 12px;
+}
+.client-card .profile .p-title h5{
+  font-size: 14px;
+ }
+ .client-card .profile .p-title h6{
+    font-size: 10px;
+    font-weight: 400;
+ }
+ .client-card .video{
+  padding-left: 20px;
+  width: 350px;
+  height: 180px;
+ }
+ .client-card .player{
+  position: absolute;
+  top: 65px;
+  right: 153px;
+  width: 32px;
+  height: 35px;
+ }
+ .clients-bottom{
+  text-align: center;
+ }
+ .clients-bottom p{
+  font-size: 14px;
+  font-weight: 300;
+ }
+ /* slider */
+
+ 
+.post-slider {
+  padding-top: 40px;
+  position: relative;
+}
+.post-slider .next{
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  font-size: 2em;
+  cursor: pointer;
+  color:gray;
+}
+.post-slider .prev{
+  position: absolute;
+  top: 40%;
+  left: 0px;
+  font-size: 2em;
+  cursor: pointer;
+  color:gray;
+}
+.post-slider .post-wrapper{
+  width: 90%;
+  height: 100px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.post-slider .post-wrapper .post{
+ width: 100px;
+ height: 150px;
+ margin: 0px 10px;
+ display: inline-block;
+ padding: 0 20px;
+}
+.post-slider .post-wrapper .post img{
+  width: 60px;
+  height: 60px;
+ }
+
+/*================================= 
+     instructor section css 
+ ===================================*/
+
+ #instructor{
+  width: 100%;
+  margin-top: 60px;
+ }
+ .backgroun{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
+ .inner-backgrouen{
+  position: absolute;
+ }
+ .inner-backgrouen h3{
+  font-size: 20px;
+  color: grey;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+ }
+ .inner-backgrouen .inst-search input{
+  border: none;
+  outline: none;
+  height: 35px;
+  padding-left: 25px;
+  width: 400px;
+  border-radius: 20px;
+  font-size: 12px;
+ }
+ .inner-backgrouen .inst-search button{
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  background: #ab0534;
+  position: absolute;
+  right: 0px;
+  font-size: 10px;
+  color: #f4f8ff;
+  transition: all .3s ease;
+ }
+ .inner-backgrouen .inst-search button:hover{
+  background: #92022b;
+ }
+
+ /*================================= 
+     footer section css 
+ ===================================*/
+
+ footer{
+  width: 100%;
+  height: 488px;
+  background: #292662;
+ }
+ .inner-footer{
+  display: flex;
+  padding-top: 109px;
+  color: #f4f8ff;
+ }
+ .inner-footer h6{
+  font-size: 16px;
+ }
+ .inner-footer h5{
+  font-size: 16px;
+  padding-top: 15px;
+ }
+ .inner-footer ul{
+  list-style: none;
+  margin-top: 5px;
+ }
+
+ .inner-footer  p a{
+  color: #f4f8ff;
+  font-size: 12px;
+  text-decoration: none;
+}
+ .inner-footer .address{
+  width: 350px;
+  height: auto;
+ }
+ 
+ .inner-footer .help-center{
+  width: 225px;
+  height: auto;
+}
+
+.inner-footer .about-us{
+  width: 195px;
+  height: auto;
+}
+.inner-footer .tools{
+  width: 195px;
+  height: auto;
+}
+.inner-footer .getin-tuch{
+  width: 180px;
+  height: auto;
+}
+
+.b-hr{
+  margin-top: 61px;
+  background: #494679;
+  width: 70%;
+  height: 1px;
+  border: none;
+}
+.copyRight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #f4f8ff;
+  margin-top: 35px;
+}
+
+

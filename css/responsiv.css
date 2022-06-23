@@ -1,0 +1,513 @@
+
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /*===================================== 
+                   Tablet 
+   =====================================*/
+   @media only screen and (min-width:200px) and (max-width: 991px) {
+    .hamburger {
+        right: 50px;
+        top: 8px;
+        position: absolute;
+        cursor: pointer;
+    }
+    
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:#ab0534;
+    box-shadow: 0 8px 32px #63031e;
+    backdrop-filter: blur(4px);
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 25px;
+    z-index: 999;
+    padding: 30px 0;
+   }
+   .menu li a:hover {
+    background-color:#ab0534;
+    box-shadow: 0 8px 32px #63031e;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 6px 20px;
+   }
+   
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+    padding-right: 80px;
+   }
+   nav ul .menu li::before{
+    display: none;
+    }
+   .sign_up_login {
+	padding-right: 140px;
+  }
+  .home_datels .top_img{
+    position: absolute;
+    top: 45px;
+    left: 140px;
+  }
+  .home_datels .top_img img{
+    width: 530px;
+    height: 665px;
+  }
+  #navbar {
+	height: 54.3vh;
+}
+#catagoris {
+	height: 40vh;
+}
+.inner-catagori .title .line {
+	margin-left: 230px;
+}
+.catagoris-item .item-box {
+    width: 85px;
+    height: 85px;
+    padding: 25px;
+    margin: 0 5px;
+  }
+  
+.catagoris-item .item-box .line{
+    width: 70px;
+    height: 1px;
+    margin-top: -85px;
+  }
+  .catagoris-item .item-box .line1{
+    width: 1px;
+    height:60px;
+    margin-right: -24px;
+    
+  }
+  .catagoris-item .item-box .line2{
+    width: 1px;
+    height:60px;
+    margin-right: 24px;
+  }
+  .catagoris-item .item-box .line3{
+    width: 70px;
+    height: 1px;
+    margin-top: 85px;
+  }
+  .catagoris-item .item-box h5 {
+	font-size: 11px;
+  }
+.catagoris-item .item-box i {
+	font-size: 16px;
+  }
+.box-text {
+	padding: 0 12px 10px 12px;
+  }
+.box-text h4 {
+	font-size: 10px;
+  }
+.box-text h6 {
+	font-size: 11px;
+	font-weight: 600;
+  }
+.all-card .popular-card h6 {
+	top: 1.3rem;
+	left: 3.7rem;
+    font-size: 12px;
+  }
+  .all-card .popular-card:last-child h6 {
+	left: 2rem;
+  }
+  #popular-course {
+	height: 28vh;
+  }
+  .inner-achieve .achieve-card img {
+	width: 40px;
+	height: 40px;
+}
+.inner-achieve .achieve-card .ac-4 {
+	width: 42px;
+	height: 51px;
+}
+.inner-achieve .achieve-card .ac-6 {
+	width: 85px;
+	height: 42px;
+}
+.inner-achieve .achieve-card {
+	padding: 14px;
+}
+.inner-achieve .achieve-card p {
+	font-size: 9px;
+}
+.client-card .video {
+	width: 300px;
+	height: 160px;
+}
+#clients {
+	height: 55vh;
+}
+.blog-img img {
+	width: 189px;
+	height: 115px;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: -1px;
+}
+
+.card .card-content {
+    margin: 0 -10px;
+  }
+  .bolg-datels .inner-datels h5 {
+	font-size: 9.8px;
+}
+.inner-footer h6 {
+	font-size: 14px;
+}
+.inner-footer h5 {
+	font-size: 14px;
+}
+.inner-footer p a {
+	font-size: 10px;
+}
+.inner-footer .address {
+	width: 300px;
+	height: auto;
+}
+
+}
+
+/*===================================== 
+                   Mobile 
+   =====================================*/
+
+@media only screen and (min-width:200px) and (max-width:480px){
+    .container{
+        margin: 0 auto;
+        max-width: 1170px;
+        width: 95%;
+    }
+    .logo {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .searchBox {
+        position: relative;
+        right: 30px;
+    }
+    .searchToggle i {
+        font-size: 16px;
+    }
+    .sign_up_login {
+        right: 20px;
+    }
+    .sign_up_login .sign_up {
+        position: absolute;
+        display: flex;
+        top: 15px;
+        left: 180px;
+        font-size: 14px;
+    }
+    .sign_up_login .login {
+        position: absolute;
+        display: flex;
+        top: 15px;
+        left: 275px;
+        font-size: 14px;
+    }
+    .hamburger {
+        position: absolute;
+        right: -50px;
+    }
+    .sign_up_login .sign_up  i {
+        font-size: 12px;
+        margin: 5px 7px 0 0;
+    }
+    .sign_up_login .login i {
+        font-size: 12px;
+        margin: 5px 7px 0 0;
+    }
+    .home_datels h2 {
+        font-size: 1.3rem;
+    }
+    .home_datels p {
+        font-size: 11px;
+    }
+    .home_datels .top_img img {
+        width: 375px;
+        height: 500px;
+    }
+    .home_datels .top_img {
+        top: 44px;
+        left: 20px;
+    }
+    #navbar {
+        width: 100%;
+        height: 62.8vh;
+    }
+    .inner-catagori .title h4 {
+        font-size: 1.3rem;
+    }
+    .inner-catagori .title .line {
+        margin-left: 144px;
+    }
+    .catagoris-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+        margin: 5px 15px;
+    }
+    #catagoris {
+        height: 73vh;
+    }
+    .content .datels {
+        width: 800px;
+        padding-left: 10px;
+    }
+    .content .datels h4 {
+        font-size: 1.2rem;
+    }
+    .content .datels p {
+        font-size: 0.55rem;
+    }
+    .content .btn {
+        width: 365px;
+    }
+    .btn a {
+        font-size: .6rem;
+    }
+    .courses-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 14px;
+    }
+    .box {
+        margin-bottom: 20px;
+    }
+    .box-text h4 {
+        font-size: 12px;
+    }
+    .popular-inner .popular-text {
+        width: 400px;
+        text-align: center;
+    }
+    .popular-inner .popular-text p {
+        line-height: 0px;
+    }
+    .all-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #popular-course {
+        height: 80vh;
+    }
+    .all-card .popular-card h6 {
+        top: 2.7rem;
+        left: 10rem;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .all-card .popular-card:last-child h6 {
+        left: 7rem;
+    }
+    .achieve .achieve-title {
+        width: 400px;
+        text-align: center;
+    }
+    .achieve .inner-achieve {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .inner-achieve .achieve-card {
+       margin-bottom: 20px;
+    }
+    .client-title {
+        width: 400px;
+        text-align: center;
+    }
+    .clients-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    #clients {
+        height: 105vh;
+    }
+    .client-card {
+        padding-left: 80px;
+    }
+    .client-card .video {
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+    .client-card .player {
+        top: 75px;
+        left: 185px;
+        width: 26px;
+        height: 30px;
+    }
+    .clients-bottom {
+        text-align: center;
+        margin-top: 213px;
+    }
+    .clients-bottom p {
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .blog-title {
+        width: 400px;
+        text-align: center;
+    }
+    .blog-img img {
+        width: 131px;
+        height: 88px;
+    }
+    .bolg-datels .dateName {
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+    .bolg-datels .dateName .date {
+       padding-left: 14px;
+    }
+    .bolg-datels .dateName .name {
+        padding-left: 14px;
+        margin-top: 5px;
+    }
+    .bolg-datels {
+        padding: 10px;
+    }
+    .btn-icon {
+        display: grid;
+        grid-auto-columns: 1fr;
+        padding-left: 0px;
+        grid-row-gap: 3px;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: -13px;
+    }
+    .inner-backgrouen h3 {
+        font-size: 16px;
+        color: grey;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: -4px;
+    }
+    .inner-backgrouen .inst-search input {
+        height: 26px;
+        width: 297px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+    .inner-backgrouen .inst-search button {
+        height: 26px;
+        width: 80px;
+        top: 30px;
+        font-size: 8px;
+       
+    }
+    .inner-footer {
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-row-gap: 20px;
+    }
+    .inner-footer .address {
+        width: 200px;
+        height: auto;
+    }
+    footer {
+        height: 700px;
+    }
+    .b-hr {
+        margin: 40px 0 20px 0;
+    }
+    .copyRight {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 60px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:395px){ 
+    .logo {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .sign_up_login .sign_up {
+        top: 18px;
+        left: 168px;
+        font-size: 13px;
+    }
+    .sign_up_login .login {
+        top: 18px;
+        left: 258px;
+        font-size: 13px;
+    }
+    .hamburger {
+        top: 10px;
+        right: -60px;
+    }
+    .searchToggle i {
+        top: 18px;
+        left: 24px;
+    }
+    .home_datels .top_img img {
+        width: 337px;
+        height: 466px;
+        margin-top: 15px;
+    }
+    #navbar {
+        width: 100%;
+        height: 67.8vh;
+    }
+    .container {
+        width: 92%;
+    }
+    .all-card .popular-card h6 {
+        top: 2.4rem;
+        left: 8rem;
+    }
+    .all-card .popular-card:last-child h6 {
+        left: 6rem;
+    }
+    .achieve .achieve-title {
+        width: 349px;
+    }
+    p {
+        font-size: 9px;
+    }
+    .client-title {
+        width: 348px;
+    }
+    .client-card .video {
+        left: 12px;
+    }
+    .client-card .player {
+        left: 154px;
+    }
+    #clients {
+        height: 112vh;
+    }
+    .blog-title {
+        width: 341px;
+    }
+    .blog-img img {
+        width: 115px;
+        height: 75px;
+    }
+    .bolg-datels .inner-datels h5 {
+        font-size: 8.8px;
+    }
+    .inner-footer {
+        padding-left: 36px;
+    }
+}
